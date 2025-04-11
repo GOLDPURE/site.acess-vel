@@ -103,13 +103,12 @@ h2 {
     color: var(--laranja-claro);
 }
 
-#galeria {
+#Obras famosas{
     background-color: #ffffff;
 
 }
 
-.fundo-galeria {
-    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+.fundo obras famosas {
     background-size: 180px 180px;
 }
 
