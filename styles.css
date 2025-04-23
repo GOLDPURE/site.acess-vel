@@ -110,10 +110,9 @@ h2 {
 
 /* Estilização das imagens da galeria */
 #galeria img {
-    width: 300px; /* Defina o tamanho desejado */
+       width: 100%;
     height: 200px;
-    object-fit: cover; /* Mantém a proporção */
-    border-radius: 15px; /* Mantém o arredondamento */
+    object-fit: cover;
 }
 
 .fundo obras famosas {
