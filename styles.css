@@ -1,36 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
-
 :root {
-    
---laranja-claroa:e6e6ec#ffffff;
-    
+    --laranja-claro: #e6e6ec; /* Corrigi o valor da variável */
+    --branco: #ffffff;
 }
 
 body {
     font-size: 1rem;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
     background-color: #fdfdff;
 }
 
-
 section {
     padding-bottom: 5rem;
 }
 
-
 .nav-link {
-    color: #030a11
-    
+    color: #030a11;
 }
 
 .inicio-fundo {
-    /* aula 3 */
     background-image: url('img/8888.jpg');
-    /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
     border-radius: 80px;
@@ -40,7 +31,6 @@ section {
     margin: 0 auto;
 }
 
-/* posicionamento para a imagem à direita */
 .img-inicio {
     position: absolute;
     right: 0;
@@ -49,7 +39,6 @@ section {
     height: auto;
 }
 
-
 .esquerda-conteudo {
     display: flex;
     flex-direction: column;
@@ -57,33 +46,25 @@ section {
     gap: 1rem;
 }
 
-
 .botao-inicio {
     background-color: var(--laranja-claro);
     border-radius: 30px;
     border: none;
     width: 14em;
-    /* Convertido para em aumenta o tamanho da fonte por tabela*/
     height: 3em;
-    /* Convertido para em */
-    align-content: center;
-
 }
 
 .display-4 {
     text-shadow: -5px 5px var(--laranja-claro);
 }
 
-
 #tropicalia {
     position: relative;
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('img/wwwww.jpg') top right no-repeat,
-        url('img/wwwww.jpg') bottom left no-repeat;
+    background: url('img/wwwww.jpg') top right no-repeat, url('img/wwwww.jpg') bottom left no-repeat;
     background-size: 180px 180px;
-    /* Ajuste o tamanho conforme necessário */
 }
 
 #tropicalia .container {
@@ -92,9 +73,7 @@ section {
     justify-content: center;
     position: relative;
     z-index: 1;
-    /* Garante que o conteúdo fica acima das imagens do background */
 }
-
 
 h2 {
     font-family: 'Lemon', serif;
@@ -105,17 +84,9 @@ h2 {
 
 #Obras {
     background-color: #ffffff;
-
 }
 
-/* Estilização das imagens da galeria */
-#Obras famosas img {
-       width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.fundo obras famosas {
+.fundo-obras-famosas {
     background-size: 180px 180px;
 }
 
@@ -123,18 +94,13 @@ h2 {
     background-image: url('img/87.jpg');
     background-size: cover;
     padding: 4rem 0;
-    /* Espaçamento interno para a seção de contato */
-
 }
 
 .formulario {
     background-color: #ffffff;
     padding: 2rem;
-    /* Espaçamento interno dentro do formulário */
     border-radius: 10px;
-    /* Borda arredondada para o formulário */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para destacar o formulário */
     font-weight: bold;
 }
 
@@ -144,7 +110,22 @@ h2 {
     font-weight: bold;
 }
 
-/* chama classe do bootstrap para modificar a cor */
 .form-control {
     background-color: #ffffff;
+}
+
+/* Estilização das imagens da galeria em círculos de tamanhos iguais */
+#Galeria .row img {
+    width: 200px; /* Tamanho fixo para as imagens */
+    height: 200px; /* Tamanho fixo para as imagens */
+    object-fit: cover;
+    border-radius: 50%; /* Torna as imagens circulares */
+    margin: 10px; /* Adiciona espaçamento entre as imagens */
+}
+
+/* Caso queira centralizar as imagens da galeria */
+#Galeria .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
